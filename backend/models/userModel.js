@@ -9,6 +9,10 @@ const userSchema = new mongoose.Schema({
     resetOtp: { type: String, default: "" },
     resetOtpExpires: { type: Number, default: 0 },
     isAccountVerified: { type: Boolean, default: false },
+    paystackCustomerCode: { type: String, default: "" },
+    paystackAuthorization: { type: Object, default: {}},
+    paid: { type: Boolean, default: false },
+    subscriptionId: String
 },
 {timestamps: true});
 
